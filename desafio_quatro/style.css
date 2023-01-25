@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1924;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.div-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.name-avatar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgba(225, 225, 230, 1);
+  font-size: 1rem;
+}
+
+.span-hour {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(225, 225, 230, 1);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.chat-one,
+.chat-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.chat-one > span,
+.chat-two > span,
+.chat-three > span,
+.chat-four > span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(225, 225, 230, 1);
+  font-size: 0.7rem;
+}
+
+.chat-one > p,
+.chat-three > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(225, 225, 230, 1);
+  font-size: 0.75rem;
+  line-height: 16px;
+  width: 60%;
+  background-color: #633bbc;
+  padding: 1rem;
+  border-radius: 0 8px 8px;
+}
+
+.chat-two,
+.chat-four {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.chat-two > p,
+.chat-four > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(225, 225, 230, 1);
+  font-size: 0.75rem;
+  line-height: 16px;
+
+  background-color: rgba(7, 132, 126, 1);
+  padding: 1rem;
+  border-radius: 8px 8px 0 8px;
+}
+
+#p-boracodar {
+  font-weight: 700;
+}
+
+.section-message {
+  padding: 1.5rem;
+}
+
+.div-message {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #282843;
+  border-radius: 999px;
+}
+
+.div-message > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgba(225, 225, 230, 1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .chat-one > p,
+  .chat-three > p {
+    width: fit-content;
+  }
+
+  body {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .chat-one > p,
+  .chat-three > p {
+    width: fit-content;
+  }
+
+  body {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .chat-one > p,
+  .chat-three > p {
+    width: fit-content;
+  }
+  body {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .chat-one > p,
+  .chat-three > p {
+    width: fit-content;
+  }
+  body {
+    padding: 2rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
